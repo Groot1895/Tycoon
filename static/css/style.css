@@ -9,3 +9,20 @@ div.scrollmenu a {
   padding: 14px;
   text-decoration: none;
 }
+body {
+	background: linear-gradient(60deg, #FFF0F5, #FAF0E6, #FAEBD7, #FFFFF0, #FFFAF0, #FDF5E6, #F5F5DC, #FFF5EE, #F8F8FF, #F0F8FF, #F0FFFF, #F5FFFA, #F0FFF0, #FFFAFA, #F5F5F5, #FFFFFF);
+	background-size: 600% 600%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
