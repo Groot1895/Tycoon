@@ -1,3 +1,20 @@
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+div.scrollmenu a:hover {
+  color:#055677;
+  background-color: white;
+}
+
 .modal-body {
 	background: linear-gradient(to bottom right, lightpink,lightcoral,lightsalmon,LightGoldenrodYellow,LightYellow,LightCyan,LightSkyBlue,LightSteelBlue,LightBlue,LightGray);
 	background-size: 600% 600%;
