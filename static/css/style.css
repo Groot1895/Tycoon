@@ -1,20 +1,14 @@
-div.scrollmenu {
-  overflow: auto;
-  white-space: nowrap;
-}
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-body, .modal-body {
-	background: linear-gradient(60deg, #FFF0F5, #FAF0E6, #FAEBD7, #FFFFF0, #FFFAF0, #FDF5E6, #F5F5DC, #FFF5EE, #F8F8FF, #F0F8FF, #F0FFFF, #F5FFFA, #F0FFF0, #FFFAFA, #F5F5F5, #FFFFFF);
+.modal-body {
+	background: linear-gradient(to bottom right, lightpink,lightcoral,lightsalmon,LightGoldenrodYellow,LightYellow,LightCyan,LightSkyBlue,LightSteelBlue,LightBlue,LightGray);
 	background-size: 600% 600%;
-	animation: gradient 6s ease infinite;
+	animation: gradient 15s ease infinite;
 }
-
+.bg-lite {
+  background: linear-gradient(to right, #055677,white,white,#055677);
+}
+.nbar {
+  background: #055677;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -25,4 +19,8 @@ body, .modal-body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.pline {
+  padding: 0.1rem;
 }
