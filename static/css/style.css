@@ -24,6 +24,12 @@ body {
   background: whitesmoke;
 }
 
+.social{  
+  font-weight: bold;
+  color: gainsboro;
+  background: black;
+}
+
 .navbar-toggler {
   border: none;
 }

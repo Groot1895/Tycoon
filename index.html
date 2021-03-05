@@ -15,7 +15,7 @@
 
   <body>
 
-    <nav class="text-center p-1">
+    <nav class="p-1 social text-center text-md-end">
       <div class="container">
         <label>Follow Us on</label>
         <a href="https://www.facebook.com/" target="_blank" class="p-1"><img src="static/images/fb.svg"></a>
@@ -126,37 +126,37 @@
     
     <div class="pt-5 pb-5" id="ot">
       <div class="container">
-        <h1>Our Team</h1>
-      <div class="row row-cols-1 row-cols-md-4">
-        <div class="col-md-3 p-4 text-center">
-          <img src="static/images/ot.webp" class="rounded-circle" style="height: 150px; width: 150px;">
-          <div class="pt-3">
-            <p>name</p>
-            <p>description</p>
+        <h1 class="mb-5">Our Team</h1>
+        <div class="row row-cols-1 row-cols-md-4">
+          <div class="col-md-3 text-center">
+            <img src="static/images/ot.webp" class="rounded-circle" style="height: 150px; width: 150px;">
+            <div class="pt-3">
+              <p>name</p>
+              <p>description</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="static/images/ot.webp" class="rounded-circle" style="height: 150px; width: 150px;">
+            <div class="pt-3">
+              <p>name</p>
+              <p>description</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="static/images/ot.webp" class="rounded-circle" style="height: 150px; width: 150px;">
+            <div class="pt-3">
+              <p>name</p>
+              <p>description</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="static/images/ot.webp" class="rounded-circle" style="height: 150px; width: 150px;">
+            <div class="pt-3">
+              <p>name</p>
+              <p>description</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 p-4 text-center">
-          <img src="static/images/ot.webp" class="rounded-circle" style="height: 150px; width: 150px;">
-          <div class="pt-3">
-            <p>name</p>
-            <p>description</p>
-          </div>
-        </div>
-        <div class="col-md-3 p-4 text-center">
-          <img src="static/images/ot.webp" class="rounded-circle" style="height: 150px; width: 150px;">
-          <div class="pt-3">
-            <p>name</p>
-            <p>description</p>
-          </div>
-        </div>
-        <div class="col-md-3 p-4 text-center">
-          <img src="static/images/ot.webp" class="rounded-circle" style="height: 150px; width: 150px;">
-          <div class="pt-3">
-            <p>name</p>
-            <p>description</p>
-          </div>
-        </div>
-      </div>
       </div>      
     </div>
 
@@ -194,9 +194,10 @@
             <textarea class="form-control p-3" name="message"></textarea>
           </div>
           <div class="col-12">
-            <div class="d-grid">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>          
+            <div class="btn-group gap-2 d-flex">
+              <button type="reset" class="btn btn-outline-danger">Clear</button>
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
           </div>
         </form>
       </div>      

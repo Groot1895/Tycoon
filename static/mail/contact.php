@@ -1,19 +1,17 @@
 
 <?php
 
-  $type = $_POST['type'];
-  $name = $_POST['name'];
-  $visitor_email = $_POST['email'];
-  $mobile = $_POST['mobile'];
-  $message = $_POST['message'];
+  $type = htmlspecialchars(stripslashes(trim($_POST['type'])));
+  $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
+  $visitor_email = htmlspecialchars(stripslashes(trim($_POST['email'])));
+  $mobile = htmlspecialchars(stripslashes(trim($_POST['mobile'])));
+  $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
 
-  $email_from = 'tycoonsolutions.in';
   $email_subject = "$visitor_email - $mobile";
-  $email_body = "\n $name - $type \n"."\n $message \n";
+  $email_body = "\n $name - $type \n"."Sender mail : $visitor_email \n"."Sender Mobile : $mobile \n"."Sender Message : $message";
 
-  $to = "kponnivalavan95@gmail.com";
-  $headers = "From: $email_from \n";
+  $to = "webcall@tycoonsolutions.in";  
 
-  mail($to,$email_subject,$email_body,$headers);
+  mail($to,$email_subject,$email_body);
 
 ?>
