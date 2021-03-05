@@ -1,48 +1,21 @@
-html {
-  scrollbar-width: none;
-}
-
-html::-webkit-scrollbar {
-    display: none;
-}
-
 body {
-  background: linear-gradient(to bottom, black, white);
-  color: white;
+  font-family: 'Mulish', sans-serif;
+  background: white;  
 }
-.scrollmenu {
-  overflow: auto;
-  white-space: nowrap;
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.scrollmenu a:hover {
-  color:black;
-  background: rgba(255, 255, 255, .7);
+
+.nb {
+  font-weight: bolder;
 }
 
-.nbar {
-  background: transparent;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.pline {
-  padding: 0.1rem;
+.navbar-toggler {
+  border: none;
 }
