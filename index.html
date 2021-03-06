@@ -15,12 +15,12 @@
 
   <body>
 
-    <nav class="p-1 social text-center text-md-end">
+    <nav class="p-1 social text-center text-md-end" style="background: gainsboro;">
       <div class="container">
         <label>Follow Us on</label>
         <a href="https://www.facebook.com/" target="_blank" class="p-1"> <img src="static/images/fb.svg" height="15" width="18"></a>
         <a href="https://instagram.com/tycoon_promoterss?igshid=jfwvoyrdxt2z" target="_blank" class="p-1"> <img src="static/images/ig.svg" height="15" width="18"></a>
-        <a href="https://www.youtube.com/channel/UCK6afafkCEeBo8JT25j8OdQ" target="_blank" class="p-1"> <img src="static/images/yt.svg" height="15" width="18"></a>
+        <a href="https://www.youtube.com/channel/UCK6afafkCEeBo8JT25j8OdQ" target="_blank" class="p-1"> <img src="static/images/yt.svg" height="18" width="18"></a>
       </div>      
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top nb">
@@ -166,10 +166,10 @@
           <h1>Contact Us</h1>
           <h5>For feedbacks and all other enquires, please fill up this form and allow us to get back to you.</h5>
         </span>        
-        <form class="row g-3" method="POST">
+        <form class="row g-3" action="static/mail/contact.php" method="POST">
           <div class="col-md-6">
             <label for="inputState" class="form-label">I am a</label>
-            <select id="inputState" class="form-select p-3 form-morph rounded-c" name="type">
+            <select id="inputState" class="form-select p-3 form-morph rounded-c" name="type" required>
               <option selected>Choose .. </option>
               <option>Student</option>
               <option>Professor</option>
@@ -179,19 +179,19 @@
           </div>
           <div class="col-md-6">
             <label class="form-label">Name</label>
-            <input type="text" placeholder="Name" class="form-control p-3 form-morph rounded-c" name="name" autocomplete="off">
+            <input type="text" placeholder="Name" class="form-control p-3 form-morph rounded-c" name="name" autocomplete="off" required>
           </div>
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" placeholder="example@mail.com" class="form-control p-3 form-morph rounded-c" name="mail" autocomplete="off">
+            <input type="email" placeholder="example@mail.com" class="form-control p-3 form-morph rounded-c" name="mail" autocomplete="off" required>
           </div>
           <div class="col-md-6">
             <label class="form-label">Mobile</label>
-            <input type="tel" maxlength="10" minlength="10" placeholder="+91 - XXXXXXXXXX" class="form-control p-3 form-morph rounded-c" name="mobile" autocomplete="off">
+            <input type="tel" maxlength="10" minlength="10" placeholder="+91 - XXXXXXXXXX" class="form-control p-3 form-morph rounded-c" name="mobile" autocomplete="off" required>
           </div>
           <div class="col-12">
             <label class="form-label">Message</label>
-            <textarea class="form-control p-3 form-morph rounded-c" placeholder="Message" name="message"> </textarea>
+            <textarea class="form-control p-3 form-morph rounded-c" name="message" required> </textarea>
           </div>
           <div class="col-12">
             <div class="btn-group d-flex morph rounded-c">
