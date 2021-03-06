@@ -20,7 +20,7 @@ body {
 }
 
 .rounded-c {
-  border-radius: 1rem;
+  border-radius: .6rem;
 }
 
 textarea {
@@ -28,8 +28,7 @@ textarea {
 }
 
 .btn-group > .btn {
-  border-radius: .6rem;
-  box-shadow:  3px 3px 6px #dddddd,-3px -3px 6px #ffffff;
+  border-radius: .6rem;  
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
