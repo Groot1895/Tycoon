@@ -166,7 +166,7 @@
           <h1>Contact Us</h1>
           <h5>For feedbacks and all other enquires, please fill up this form and allow us to get back to you.</h5>
         </span>      
-        <form class="row g-3" action="static/mail/contact.php" method="post">
+        <form class="row g-3" method="POST">
           <div class="col-md-6">
             <label for="inputState" class="form-label">I am a</label>
             <select id="inputState" class="form-select p-3" name="type">
@@ -183,7 +183,7 @@
           </div>
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" placeholder="example@mail.com" class="form-control p-3" name="email">
+            <input type="email" placeholder="example@mail.com" class="form-control p-3" name="mail">
           </div>
           <div class="col-md-6">
             <label class="form-label">Mobile</label>
@@ -196,9 +196,10 @@
           <div class="col-12">
             <div class="btn-group d-flex">
               <button type="reset" class="btn btn-outline-danger">Clear</button>
-              <button type="submit" class="btn btn-danger">Submit</button>
+              <button name="submit" type="submit" class="btn btn-danger">Submit</button>
             </div>
           </div>
+          <div class="col-12" name="response"></div>
         </form>
       </div>      
     </div>
