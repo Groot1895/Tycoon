@@ -28,7 +28,8 @@ textarea {
 }
 
 .btn-group > .btn {
-  border-radius: .6rem;  
+  border-radius: .6rem;
+  box-shadow: none;  
 }
 
 .scrollbar-hidden::-webkit-scrollbar {

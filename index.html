@@ -164,16 +164,17 @@
         <span class="p-3">
           <h1>Contact Us</h1>
           <h5>For feedbacks and all other enquires, please fill up this form and allow us to get back to you.</h5>
-        </span>        
-        <form class="row g-3" action="static/mail/contact.php" method="POST">
+        </span>
+        <iframe name="frame" style="display:none;"></iframe>
+        <form class="row g-3" action="static/mail/contact.php" method="POST" target="frame">
           <div class="col-md-6">
             <label for="inputState" class="form-label">I am a</label>
             <select id="inputState" class="form-select p-3 form-morph rounded-c" name="type" required>
-              <option selected>Choose .. </option>
-              <option>Student</option>
-              <option>Professor</option>
-              <option>College Management</option>
-              <option>Others</option>
+              <option value="" hidden>Choose .. </option>
+              <option value="Student">Student</option>
+              <option value="Professor">Professor</option>
+              <option value="College Management">College Management</option>
+              <option value="Others">Others</option>
             </select>
           </div>
           <div class="col-md-6">
