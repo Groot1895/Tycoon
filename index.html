@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> 
     <link href="static/css/bootstrap.css" rel="stylesheet">
-    <link href="static/css/style.css" rel="stylesheet">    
+    <link href="static/css/style.css" rel="stylesheet">
+    <script src="static/js/jquery-3.js"> </script>
+    <script src="static/js/contact.js"> </script>
     <script src="static/js/bootstrap.js"> </script>
   </head>
 
@@ -163,13 +165,12 @@
       <div class="container">
         <span class="p-3">
           <h1>Contact Us</h1>
-          <h5>For feedbacks and all other enquires, please fill up this form and allow us to get back to you.</h5>
+          <h5>For feedbacks and all other enquires, please fill up this form and allow us to get back to you.</h5>          
         </span>
-        <iframe name="frame" style="display:none;"></iframe>
-        <form class="row g-3" action="static/mail/contact.php" method="POST" target="frame">
+        <form class="row g-3 pb-4" id="cn" method="POST">
           <div class="col-md-6">
             <label for="inputState" class="form-label">I am a</label>
-            <select id="inputState" class="form-select p-3 form-morph rounded-c" name="type" required>
+            <select id="type" class="form-select p-3 form-morph rounded-c" required>
               <option value="" hidden>Choose .. </option>
               <option value="Student">Student</option>
               <option value="Professor">Professor</option>
@@ -179,27 +180,29 @@
           </div>
           <div class="col-md-6">
             <label class="form-label">Name</label>
-            <input type="text" placeholder="Name" class="form-control p-3 form-morph rounded-c" name="name" autocomplete="off" required>
+            <input type="text" id="name" placeholder="Name" class="form-control p-3 form-morph rounded-c" autocomplete="off" required>
           </div>
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" placeholder="example@mail.com" class="form-control p-3 form-morph rounded-c" name="mail" autocomplete="off" required>
+            <input type="email" id="mail" placeholder="example@mail.com" class="form-control p-3 form-morph rounded-c" autocomplete="off" required>
           </div>
           <div class="col-md-6">
             <label class="form-label">Mobile</label>
-            <input type="tel" maxlength="10" minlength="10" placeholder="+91 - XXXXXXXXXX" class="form-control p-3 form-morph rounded-c" name="mobile" autocomplete="off" required>
+            <input type="tel" id="mobile" maxlength="10" minlength="10" placeholder="+91 - XXXXXXXXXX" class="form-control p-3 form-morph rounded-c" autocomplete="off" required>
           </div>
           <div class="col-12">
             <label class="form-label">Message</label>
-            <textarea class="form-control p-3 form-morph rounded-c" name="message" required> </textarea>
+            <textarea id="message" class="form-control p-3 form-morph rounded-c" required> </textarea>
           </div>
-          <div class="col-12">
+          <div class="col-12 pt-2 pb-2">
             <div class="btn-group d-flex morph rounded-c">
               <button type="reset" class="btn btn-outline-danger">Clear</button>
-              <button name="submit" type="submit" class="btn btn-danger">Submit</button>
+              <button type="submit" class="btn btn-danger" id="submit">Submit</button>              
             </div>
           </div>
-          <div class="col-12" name="response"></div>
+          <div class="col-12 pt-2 pb-2">            
+            <div class="message"></div>
+          </div>
         </form>
         <iframe class="morph p-2 rounded-c" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.9458641381937!2d79.10497212922765!3d10.751165499521182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baabfc41067317f%3A0x8eb8429fd90841cf!2sTYCOON%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1615029515905!5m2!1sen!2sin" style="width: 100%; border-radius: 1rem;"> </iframe>
       </div>      
@@ -208,7 +211,7 @@
     <div class="p-3 text-center">
       <div class="container">
         <label>Copyright &copy; 2021 Tycoon Solutions. All Rights Reserved</label>
-      </div>      
+      </div>
     </div>
 
   </body>
