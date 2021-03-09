@@ -1,4 +1,4 @@
-html {
+html {  
   scroll-behavior: smooth;
   user-select: none;
   -webkit-user-select: none;
@@ -70,4 +70,14 @@ textarea {
 
 .form-select {
   border: none;
+}
+
+.fd{
+  animation: fade 2s ease;
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }  
 }

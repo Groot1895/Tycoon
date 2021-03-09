@@ -10,7 +10,7 @@
   $mail_subject = "$visitor_mail - $mobile";
   $mail_body = "$name - $type \n"."Sender mail : $visitor_mail \n"."Sender Mobile : $mobile \n"."Sender Message : \n $message";
 
-  $to = "webcall@tycoonsolutions.in";  
+  $to = "lr139yzq9@relay.firefox.com";
 
   mail($to,$mail_subject,$mail_body);
 
