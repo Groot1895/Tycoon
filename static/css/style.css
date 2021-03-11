@@ -5,12 +5,12 @@ html {
   -ms-user-select: none;
 }
 
-body {
+body,.modal-content {
   font-family: 'Mulish', sans-serif;
   background: whitesmoke;
 }
 
-.morph {
+.morph {  
   box-shadow:  5px 5px 10px #dddddd,-5px -5px 10px #ffffff;
 }
 
@@ -73,7 +73,7 @@ textarea {
 }
 
 .fd{
-  animation: fade 6s ease;
+  animation: fade 1s ease;
 }
 
 @keyframes fade {
@@ -85,6 +85,26 @@ textarea {
   }
 }
 
+.zoom{
+  animation: zoom 1.5s ease infinite;
+}
+
+@keyframes zoom {
+  0%{
+    scale: 1;
+  }
+  50%{
+    scale: 1.1;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
 .text-just {
   text-align: justify;
+}
+
+.modal-backdrop {
+  background-color:inherit;
 }
